@@ -17,7 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Pull Request
-        if: github.event_name == 'pull_request_target'
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_GITHUB_WEBOOK }}
           DISCORD_EMBEDS: '[ { 
